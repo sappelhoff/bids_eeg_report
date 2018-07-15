@@ -1,1 +1,3 @@
 # bids_eeg_report
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/sappelhoff/bids_eeg_report/master)

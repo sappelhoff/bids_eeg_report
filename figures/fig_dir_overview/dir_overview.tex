@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times} % need to change font in included graphics
+\usepackage[paperheight=19cm,paperwidth=16cm,heightrounded, landscape]{geometry}
+\usepackage[export]{adjustbox} % http://ctan.org/pkg/adjustbox
+\usepackage{graphicx}
+\usepackage{listings}
+
+% First compile part_a.tex and part_b.tex and then crop them using pdfcrop
+% (https://ctan.org/pkg/pdfcrop). The cropped files are then used as input
+% to the final figure, which can then be cropped itself.
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{figure}[h!]
+  \includegraphics[width=.49\linewidth,page=1,valign=t]{part_a-crop.pdf}%
+  \fbox{\includegraphics[width=.49\linewidth,page=1,valign=t]{part_b-crop.pdf}}
+\end{figure}
+
+
+\end{document}

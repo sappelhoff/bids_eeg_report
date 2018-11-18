@@ -1,0 +1,45 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[paperheight=19cm,paperwidth=16cm,heightrounded]{geometry}
+\usepackage{dirtree}
+
+% Use pdfcrop to crop the resulting .pdf file: https://ctan.org/pkg/pdfcrop
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{large}
+\textbf{
+\dirtree{%
+.1 /.
+.2 README.
+.2 CHANGES.
+.2 dataset\_description.json.
+.2 participants.tsv.
+.2 participants.json.
+.2 task-TASKNAME\_events.json.
+.2 stimuli.
+.3 stim1.png.
+.3 \vdots.
+.2 sourcedata.
+.3 sub-01.
+.4 eeg.
+.5 sub-01\_task-TASKNAME\_eeg.xdf.
+.3 \vdots.
+.2 sub-01.
+.3 anat.
+.4 sub-01\_T1w.nii.gz.
+.4 sub-01\_T1w.json.
+.3 eeg.
+.4 sub-01\_task-TASKNAME\_eeg.edf.
+.4 sub-01\_task-TASKNAME\_eeg.json.
+.4 sub-01\_task-TASKNAME\_events.tsv.
+.4 sub-01\_task-TASKNAME\_channels.tsv.
+.4 sub-01\_task-TASKNAME\_electrodes.tsv.
+.4 sub-01\_task-TASKNAME\_coordsystem.json.
+.2 \vdots.
+}
+}
+\end{large}
+\end{document}

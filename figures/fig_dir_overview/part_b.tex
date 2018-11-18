@@ -1,0 +1,44 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[paperheight=19cm,paperwidth=16cm,heightrounded,landscape]{geometry}
+\usepackage{listings}
+
+% Use pdfcrop to crop the resulting .pdf file: https://ctan.org/pkg/pdfcrop
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{large}
+
+\section*{Example of *\_channels.tsv}
+\begin{lstlisting}[basicstyle=\bf]
+name	type	units	status	status_description
+CP5	EEG	uV	good	n/a
+FC5	EEG	uV	bad     high frequency noise
+FC1	EEG	uV	good	n/a
+C3	EEG	uV	good	n/a
+VEOG	EOG	uV	good	n/a
+
+\end{lstlisting}
+
+\vskip 1cm
+
+\section*{Example of *\_eeg.json}
+
+\begin{lstlisting}[basicstyle=\bf]
+{
+    "TaskName": "TASKNAME",
+    "SamplingFrequency": 1000,
+    "EEGChannelCount": 4,
+    "EOGChannelCount": 1,
+    "ECGChannelCount": 0,
+    "EMGChannelCount": 0,
+    "EEGReference": "placed on Cz",
+    "PowerLineFrequency": 50
+}
+
+\end{lstlisting}
+\end{large}
+
+\end{document}

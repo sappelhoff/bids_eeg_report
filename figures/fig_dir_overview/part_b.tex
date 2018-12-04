@@ -14,11 +14,11 @@
 \section*{Example of *\_channels.tsv}
 \begin{lstlisting}[basicstyle=\bf]
 name	type	units	status	status_description
-CP5	EEG	uV	good	n/a
-FC5	EEG	uV	bad     high frequency noise
-FC1	EEG	uV	good	n/a
-C3	EEG	uV	good	n/a
-VEOG	EOG	uV	good	n/a
+CP5	EEG	microV	good	n/a
+FC5	EEG	microV	bad     high frequency noise
+FC1	EEG	microV	good	n/a
+C3	EEG	microV	good	n/a
+VEOG	EOG	microV	good	n/a
 
 \end{lstlisting}
 
@@ -30,10 +30,9 @@ VEOG	EOG	uV	good	n/a
 {
     "TaskName": "TASKNAME",
     "SamplingFrequency": 1000,
+    "SoftwareFilters": "n/a",
     "EEGChannelCount": 4,
     "EOGChannelCount": 1,
-    "ECGChannelCount": 0,
-    "EMGChannelCount": 0,
     "EEGReference": "placed on Cz",
     "PowerLineFrequency": 50
 }
